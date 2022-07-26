@@ -1,54 +1,86 @@
 import Card from "./Card";
 
 function CardContainer(props) {
-    let ttl1 = ''
-    let dsc1 = ''
-    let ttl2 = ''
-    let dsc2 = ''
-    let ttl3 = ''
-    let dsc3 = ''
-    if (props.title === 'Science') {
-        ttl1 = "Carl Sagan"
-        dsc1 = "We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology."
-        ttl2 = "Edward Teller"
-        dsc2 = "The Science of today is the technology of tomorrow."
-        ttl3 = "Albert Einstein"
-        dsc3 = "The important thing is not to stop questioning. Curiosity has its own reason for existence. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day"
-    }
-    else if (props.title === "Life") {
-        ttl1 = "Thomas A. Edison"
-        dsc1 = "Many of life’s failures are people who did not realize how close they were to success when they gave up."
-        ttl2 = "Mae West"
-        dsc2 = "You only live once, but if you do it right, once is enough."
-        ttl3 = "Steve Jobs"
-        dsc3 = "Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking."
-    }
-    else if (props.title === "Fiction") {
-        ttl1 = "Alan Moore, V for Vendetta"
-        dsc1 = "Artists use lies to tell the truth. Yes, I created a lie. But because you believed it, you found something true about yourself."
-        ttl2 = "John Cheever"
-        dsc2 = "Fiction is art and art is the triumph over chaos… to celebrate a world that lies spread out around us like a bewildering and stupendous dream."
-        ttl3 = "Fiction"
-        dsc3 = "I am Fiction"
-    }
+    let data = [
+        {
+            title: "Carl Sagan",
+            desc: "Science is a way of thinking much more than it is a body of knowledge.",
+        },
+
+        {
+            title: "William Blake",
+            desc: "Art is the tree of life. Science is the tree of death.",
+        },
+
+        {
+            title: "Thomas Berger",
+            desc: "The art and science of asking questions is the source of all knowledge.",
+        },
+
+        {
+            title: "Albert Einstein",
+            desc: "Science without religion is lame, religion without science is blind.",
+        },
+
+        {
+            title: "Immanuel Kant",
+            desc: "Science is organized knowledge. Wisdom is organized life.",
+        },
+
+        {
+            title: "Isaac Asimov",
+            desc: "The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom.",
+        },
+
+        {
+            title: "Stephen Hawking",
+            desc: "Scientists have become the bearers of the torch of discovery in our quest for knowledge.",
+        },
+
+        {
+            title: "Oscar Wilde",
+            desc: "Success is a science; if you have the conditions, you get the result.",
+        },
+
+        {
+            title: "Georg C. Lichtenberg",
+            desc: "It is strange that only extraordinary men make the discoveries, which later appear so easy and simple.",
+        },
+
+        {
+            title: "Edward Teller",
+            desc: "The science of today is the technology of tomorrow.",
+        },
+
+        {
+            title: "Wernher von Braun",
+            desc: "Research is what I’m doing when I don’t know what I’m doing.",
+        },
+
+        {
+            title: "Isaac Newton",
+            desc: "I seem to have been only like a boy playing on the seashore, and diverting myself in now and then finding a smoother pebble or a prettier shell than ordinary, whilst the great ocean of truth lay all undiscovered before me.",
+        }
+    ]
 
 
     return (
         <>
             <div className="row d-flex justify-content-center">
                 <h1 className="display-4 text-center">{props.title}</h1>
-                <Card
-                    title={ttl1}
-                    desc={dsc1}
-                />
-                <Card
-                    title={ttl2}
-                    desc={dsc2}
-                />
-                <Card
-                    title={ttl3}
-                    desc={dsc3}
-                />
+                <Card title={data[0].title} desc={data[0].desc} />
+                <Card title={data[1].title} desc={data[1].desc} />
+                <Card title={data[2].title} desc={data[2].desc} />
+                <Card title={data[3].title} desc={data[3].desc} />
+                <Card title={data[4].title} desc={data[4].desc} />
+                <Card title={data[5].title} desc={data[5].desc} />
+                <Card title={data[6].title} desc={data[6].desc} />
+                <Card title={data[7].title} desc={data[7].desc} />
+                <Card title={data[8].title} desc={data[8].desc} />
+                <Card title={data[9].title} desc={data[9].desc} />
+                <Card title={data[10].title} desc={data[10].desc} />
+                <Card title={data[11].title} desc={data[11].desc} />
+                <Card title={data[11].title} desc={data[11].desc} />
             </div>
         </>
     );

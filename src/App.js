@@ -7,8 +7,8 @@ function App() {
     <>
       <Navbar />
       <CardContainer title="Science" />
-      <CardContainer title="Life" />
-      <CardContainer title="Fiction" />
+      {/* <CardContainer title="Life" />
+      <CardContainer title="Fiction" /> */}
     </>
   );
 }
