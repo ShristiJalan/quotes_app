@@ -68,19 +68,11 @@ function CardContainer(props) {
         <>
             <div className="row d-flex justify-content-center">
                 <h1 className="display-4 text-center">{props.title}</h1>
-                <Card title={data[0].title} desc={data[0].desc} />
-                <Card title={data[1].title} desc={data[1].desc} />
-                <Card title={data[2].title} desc={data[2].desc} />
-                <Card title={data[3].title} desc={data[3].desc} />
-                <Card title={data[4].title} desc={data[4].desc} />
-                <Card title={data[5].title} desc={data[5].desc} />
-                <Card title={data[6].title} desc={data[6].desc} />
-                <Card title={data[7].title} desc={data[7].desc} />
-                <Card title={data[8].title} desc={data[8].desc} />
-                <Card title={data[9].title} desc={data[9].desc} />
-                <Card title={data[10].title} desc={data[10].desc} />
-                <Card title={data[11].title} desc={data[11].desc} />
-                <Card title={data[11].title} desc={data[11].desc} />
+
+                {data.map((item) => (
+                    <Card title={item.title} desc={item.desc} />
+                ))}
+
             </div>
         </>
     );
